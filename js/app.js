@@ -92,3 +92,31 @@ ADJUSTMENT_BUTTON.addEventListener("click", ()=>{
 
 
 });
+
+
+new Swiper('.option__slider', {
+	
+
+	breakpoints: {
+		0:{
+			spaceBetween: 10,
+			slidesPerView: 1,
+		},
+		600:{
+			spaceBetween: 10,
+			slidesPerView: 2,
+		},
+		767:{
+			slidesPerView: 3,
+			spaceBetween: 20,
+		},
+	},
+
+	pagination: {
+		el: ".bullets",
+		clickable: true,
+	}
+});
+
+
+
